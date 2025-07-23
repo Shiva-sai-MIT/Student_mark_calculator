@@ -1,0 +1,57 @@
+# Student Marks and Grade Calculator
+# By Koduru Shiva Sai Krishna - Project 1
+
+# Input student name
+student_name = input("Enter your full name: ")
+
+# Input subjects and marks
+subject1_name = input("Enter name of Subject 1: ")
+subject1_marks = int(input(f"Enter marks for {subject1_name}: "))
+
+subject2_name = input("Enter name of Subject 2: ")
+subject2_marks = int(input(f"Enter marks for {subject2_name}: "))
+
+subject3_name = input("Enter name of Subject 3: ")
+subject3_marks = int(input(f"Enter marks for {subject3_name}: "))
+
+# Calculate total and average
+total = subject1_marks + subject2_marks + subject3_marks
+average = total / 3
+
+# Grade logic
+if average >= 90:
+    grade = "A+"
+elif average >= 80:
+    grade = "A"
+elif average >= 70:
+    grade = "B"
+elif average >= 60:
+    grade = "C"
+elif average >= 50:
+    grade = "D"
+else:
+    grade = "F"
+
+# Print result
+print("\n--- Report Card ---")
+print(f"Student Name: {student_name}")
+print(f"{subject1_name}: {subject1_marks}")
+print(f"{subject2_name}: {subject2_marks}")
+print(f"{subject3_name}: {subject3_marks}")
+print(f"Total Marks: {total}")
+print(f"Average Marks: {average:.2f}")
+print(f"Grade: {grade}")
+
+# Save result to file
+with open("report_card.txt", "w") as file:
+    file.write("--- Student Report Card ---\n")
+    file.write(f"Student Name: {student_name}\n")
+    file.write(f"{subject1_name}: {subject1_marks}\n")
+    file.write(f"{subject2_name}: {subject2_marks}\n")
+    file.write(f"{subject3_name}: {subject3_marks}\n")
+    file.write(f"Total Marks: {total}\n")
+    file.write(f"Average Marks: {average:.2f}\n")
+    file.write(f"Grade: {grade}\n")
+
+print("\nReport saved to 'report_card.txt'")
+
