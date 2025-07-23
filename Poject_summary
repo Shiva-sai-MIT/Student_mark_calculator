@@ -1,0 +1,15 @@
+Project Title: Student Marks and Grade Calculator  
+Student Name: Koduru Shiva Sai Krishna  
+Year: 2024  
+Tools Used: Python, If-Else Conditions, File Handling, Console Input/Output  
+Project Type: Solo  
+Platform Used: Pydroid 3 (Android)
+
+Description:  
+This Python project takes marks for 3 subjects, calculates total and average, assigns a grade, and saves a report to a text file.
+
+Learning Outcome:  
+- Python basics  
+- Conditional statements  
+- File handling  
+- Real-world simulation of report generation
